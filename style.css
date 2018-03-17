@@ -1,0 +1,661 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Deco Blog
+    Author: Opu Dey
+    Author URI: 
+    License: GNU General Public License version 3.0
+    License URI: 
+    Version: 1.0
+    
+    All files, unless otherwise stated, are released under the GNU General Public License
+    version 3.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+
+    1. Base CSS
+    2. Header CSS
+    3. Slider CSS
+    4. Subscribe Form CSS
+    5. Blog CSS
+    6. Footer CSS
+	7. 404
+	
+    6. Recent Cases CSS
+    7. More events CSS
+    8. Call to action CSS
+    9. Recent news CSS
+    10. Sidebar CSS
+    11. Footer top CSS
+    12. Internal page CSS
+    13. Blog post CSS
+    14. Comments CSS
+    15. Demobox CSS
+    16. Preloader CSS
+    17. Colors CSS
+
+-----------------------------------------------------------------------------------*/
+
+
+/* --------------------------------------------------------
+1. Base CSS
+-----------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Hind:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800');
+* {
+    margin: 0;
+    padding: 0
+}
+html,
+body {
+	height: 100%
+}
+body {
+	font-family: 'Hind', sans-serif;
+	font-weight:400;
+	font-size:16px;
+	line-height: 25px;
+	color:#999999;
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+a:hover,
+a > *:hover,
+a:focus,
+a > *:focus {
+    text-decoration: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Montserrat', sans-serif;
+	margin:0 0 15px;
+	font-weight:700;
+}
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+.text-uppercase {
+	text-transform:uppercase;
+}
+.clearfix:after, .clearfix:before {
+	content:'';
+	display:inline-block;
+}
+.clearfix:after {
+	clear:both;
+}
+.section-padding { 
+	padding: 60px 0
+}
+.section-gray {
+	background-color: #F7F7F7
+}
+.section-dark {
+    background-color: #110C09;
+    color: #fff;
+}
+.bg-position {
+	background-position:center center;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+/*********************
+2. Header CSS
+*********************/
+.header-area {
+    background: #212429 none repeat scroll 0 0;
+}
+.menu-button {
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px;
+	border-right: 1px solid #3c3c3c;
+	border-left: 1px solid #3c3c3c;
+}
+.mainmenu {
+    background: #212429 none repeat scroll 0 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 230px;
+    z-index: 9999;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	left: -230px;
+}
+.mainmenu.active {
+	left: 0px;
+}
+.close-button {
+	background: #11141a none repeat scroll 0 0;
+	padding: 5px 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index:99999;
+	cursor:pointer;
+}
+.mainmenu ul#nav {
+	list-style: outside none none;
+	margin: 50px 0 0;
+	padding: 0;
+}
+.mainmenu #nav li {
+    border-bottom: 1px solid #2d3138;
+}
+.mainmenu #nav li a {
+	color: #fff;
+	display: block;
+	padding: 10px;
+}
+.mainmenu #nav li:last-child {
+    border: medium none;
+}
+.logo {
+    text-align: center;
+}
+.logo > a {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+.logo img {
+  margin-top: -12px;
+}
+ul.hd-social-list {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+ul.hd-social-list li {
+    display: inline-block;
+}
+ul.hd-social-list li a {
+    border-right: 1px solid #3c3c3c;
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px 15px;
+}
+ul.hd-social-list li i.fa-search, ul.hd-social-list li i.fa-close {
+	font-size: 18px;
+	color: #fff;
+	padding: 10px 15px;
+	cursor:pointer;
+	float:right;
+}
+ul.hd-social-list li i.fa-close {
+	display:none;
+    font-size: 18px;
+}
+ul.hd-social-list li:first-child a {
+    border-left: 1px solid #3c3c3c;
+}
+.hd-social-list li form {
+    display: inline;
+}
+.hd-social-list li input {
+border: 0 none;
+padding: 7px 0;
+-webkit-transition: all 0.3s ease 0s;
+transition: all 0.3s ease 0s;
+width: 0;
+}
+
+/*********************
+3. Slider CSS
+*********************/
+.slider-area {
+	position:relative;
+}
+.slider-area:after {
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	height:290px;
+	width:100%;
+	background:#212429;
+	z-index:-1;
+}
+.slider-wrapper {
+    min-height: 570px;
+}
+.s-contnet {
+    color: #fff;
+    display: table;
+    height: 570px;
+	margin-left:35px;
+}
+.dis-table {
+    display: table-cell;
+    vertical-align: middle;
+}
+.s-contnet h6 {
+	font-size: 18px;
+	letter-spacing: 5px;
+	margin-top: 0;
+}
+.s-contnet h2 {
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.carousel-prev-next-btn {
+    display: inline-block;
+    position: absolute;
+    right: 35px;
+    top: 48%;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+}
+.carousel-prev-next-btn a {
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 0;
+    padding: 0 5px 4px;
+}
+.carousel-prev-next-btn .left.fawesome-control {
+    margin-top: 10px;
+}
+
+/*********************
+4. Subscribe Form CSS
+*********************/
+.subscribe-wrapper {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border: 1px solid #f5f5f7;
+	padding:20px 0;
+}
+.subscribe-wrapper h2 {
+	color: #212121;
+	float: left;
+	font-size: 20px;
+	letter-spacing: 2px;
+	line-height: 26px;
+	margin-bottom: 0;
+	margin-left: 5px;
+	margin-top: 0;
+	text-transform: uppercase;
+	width: 160px;
+}
+.sub-form {
+    float: left;
+    width: calc(100% - 165px);
+}
+.sub-form {
+    padding-left: 30px;
+}
+.sub-form input {
+border: 1px solid #f3f3f3;
+color: #999999;
+margin-right: 30px;
+padding: 10px;
+width: 375px;
+}
+.sub-form button {
+background: #212121 none repeat scroll 0 0;
+border: medium none;
+color: #fff;
+font-size: 14px;
+margin-right: 5px;
+padding: 11px 43px;
+text-transform: uppercase;
+}
+
+/*********************
+5. Blog CSS
+*********************/
+.blog-area {
+    padding: 60px 0;
+}
+article.single-post {
+  margin-bottom: 50px;
+}
+
+.post-content {
+    text-align: center;
+}
+.post-icon {
+    display: block;
+}
+.post-icon i {
+    background: #212121 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 18px;
+    padding: 3px 6px;
+    position: relative;
+    top: -12px;
+}
+.post-category a {
+	color: #999;
+	display: inline-block;
+	font-size: 16px;
+	letter-spacing: 2px;
+	margin-bottom: 15px;
+}
+.post-content h2 a{
+    color: #212121;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.authouAndDate {
+    display: inline-block;
+    margin-bottom: 35px;
+}
+.authouAndDate a {
+    color: #999;
+    margin-left: 7px;
+}
+.authouAndDate .fa-calendar {
+    margin-left: 15px;
+}
+a.readmore {
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    color: #212121;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+footer.entry-footer {
+    border-top: 1px solid #d7d7d7;
+    margin-top: 50px;
+}
+.ef-left, .ef-right {
+	float: left;
+	padding: 15px;
+	width: 50%;
+}
+.ef-left {
+    text-align: left;
+}
+.ef-right {
+    text-align: right;
+}
+.ef-left span {
+    margin-right: 15px;
+}
+.ef-left span i {
+    margin-right: 5px;
+}
+ul.author-social-list {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+ul.author-social-list li {
+    display: inline-block;
+}
+ul.author-social-list li a {
+    color: #464646;
+    display: inline-block;
+    font-size: 18px;
+    padding: 0 5px;
+}
+.single-post.post-quote {
+    background: #131d1c none repeat scroll 0 0;
+	margin-top: 15px;
+}
+.post-quote .post-icon i, .post-link .post-icon i {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 1px #d5d5d5;
+    color: #212121;
+}
+.post-quote .post-content, .post-link .post-content {
+    color: #fff;
+    padding: 40px;
+    position: relative;
+    text-transform: uppercase;
+}
+.post-quote .post-content p{
+	font-size: 20px;
+	line-height: 40px;
+}
+.post-quote .post-content .post-category a{
+	color:#fff;
+	margin:0;
+}
+.post-quote .post-icon, .post-link .post-icon {
+    left: 50%;
+    margin-left: -15px;
+    position: absolute;
+    top: -4px;
+}
+.single-post.post-link {
+    background: #000 none repeat scroll 0 0;
+	margin-top: 15px;
+}
+.post-link .post-content a{
+	display:inline-block;
+	text-transform:lowercase;
+	color:#fff;
+	text-decoration:underline;
+}
+.photo-gallery {
+    overflow: hidden;
+}
+.gallery-item {
+float: left;
+width: 33.3333%;
+}
+
+.single-right-sidebar {
+    margin-bottom: 35px;
+    overflow: hidden;
+}
+.single-right-sidebar:last-child {
+	margin-bottom:0;
+}
+.single-right-sidebar input {
+    border: 0 none;
+    float: left;
+    padding: 7px;
+    width: 244.5px;
+}
+.single-right-sidebar button {
+    background: #212121 none repeat scroll 0 0;
+    border: medium none;
+    float: left;
+    padding: 7px 13px;
+}
+.single-right-sidebar > h2 {
+    color: #212121;
+    font-size: 20px;
+    margin-bottom: 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.single-right-sidebar > ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.single-right-sidebar ul li a {
+    color: #212121;
+}
+.single-right-sidebar ul li a span {
+    float: right;
+}
+.single-right-sidebar ul li {
+    margin-bottom: 25px;
+}
+
+/*********************
+6. Footer CSS
+*********************/
+.google-map {
+	height: 200px;
+	width: 100%;
+}
+.footer-area {
+
+}
+.footer-top-area {
+    background: #212429 none repeat scroll 0 0;
+    padding: 55px 0;
+}
+.footer-widget {
+}
+.footer-widget h2 {
+    color: #fff;
+    font-size: 16px;
+}
+.footer-widget p, .footer-bottom-text p {
+    color: #fff;
+    font-size: 15px;
+}
+.footer-widget a, .footer-bottom-text a {
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+}
+.footer-widget a i {
+    margin-right: 10px;
+}
+.single-twitts a {
+    margin-bottom: 10px;
+}
+.footer-widget img {
+    float: left;
+}
+.instagram-imgs a {
+    float: left;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    width: 93px;
+}
+.instagram-imgs {
+    margin-left: -2px;
+}
+.footer-bottom-area p {
+    margin: 0;
+}
+.footer-bottom-area {
+    padding: 20px 0;
+}
+.footer-bottom-area {
+    background: #17191c none repeat scroll 0 0;
+    text-align: center;
+}
+
+
+/*********************
+7. 404
+*********************/
+.four-zero-four {
+	padding: 69px 0;
+}
+.fzf-content h1 {
+    color: #363636;
+    font-size: 300px;
+    line-height: 250px;
+}
+.fzf-content {
+    position: relative;
+}
+.fzf-content p {
+    background: #fff none repeat scroll 0 0;
+    color: #000;
+    font-size: 20px;
+    height: 28px;
+    left: 50%;
+    letter-spacing: 10px;
+    margin: 0 0 0 -282px;
+    padding: 3px 25px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 21.5%;
+    width: 564px;
+}
+.fzf-form {
+}
+.fzf-form form {
+border: 1px solid #cccccc;
+margin: 0 auto;
+overflow: hidden;
+width: 770px;
+}
+.fzf-form input {
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+border-color: currentcolor #ccc currentcolor currentcolor;
+-o-border-image: none;
+   border-image: none;
+border-style: none solid none none;
+border-width: 0 1px 0 0;
+float: left;
+padding: 14px;
+width: 600px;
+color:#363636;
+}
+.fzf-form button {
+  background: #363636 none repeat scroll 0 0;
+  border: medium none;
+  color: #fff;
+  float: left;
+  font-family: "montserratbold";
+  padding: 14px;
+  text-transform: uppercase;
+  width: 168px;
+}
+.fzf-content-footer h2 {
+	color: #363636;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.fzf-content-footer i {
+    font-size: 18px;
+    margin-right: 8px;
+}
+.fzf-content-footer span a {
+    color: #363636;
+}
+
+
+
