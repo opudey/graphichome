@@ -1,0 +1,118 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1280px) { 
+
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+body {background:blue;}
+.s-contnet h6 {
+  font-size: 16px;
+}
+.s-contnet h2 {
+  font-size: 21px;
+}
+.subscribe-wrapper {
+	text-align: center;
+	overflow:hidden;
+	padding: 20px;
+}
+.subscribe-wrapper h2 {
+  margin-bottom: 25px;
+  width: 100%;
+  margin-left: 0px;
+}
+.sub-form {
+  padding-left: 0;
+  width:100%;
+}
+.sub-form input {
+  margin-bottom: 25px;
+  margin-right: 0;
+  width: 100%;
+}
+.subscribe-wrapper {
+	overflow: hidden;
+	padding: 20px;
+}
+.sub-form {
+	float: left;
+	padding: 0;
+	width: 100%;
+}
+.sub-form input {
+	margin-bottom: 15px;
+	margin-right: 0;
+	width: 100%;
+}
+.sub-form button {
+	margin-right: 0;
+	width:100%;
+}
+.fzf-content h1 {
+  font-size: 120px;
+  line-height: 150px;
+}
+.fzf-content p {
+  font-size: 14px;
+  letter-spacing: 0;
+  padding: 1px 25px;
+  top: 27.5%;
+  width:100%;
+  margin:0;
+  left:0;
+}
+.fzf-form form {
+	border: 0 none;
+	width: 365px;
+}
+
+.fzf-form input {
+	border: 1px solid #cccccc;
+	margin: 0 0 15px;
+	padding: 14px;
+	width: 100%;
+}
+.fzf-form button {
+	width: 100%;
+}
+
+.four-zero-four {
+	padding: 40px 0;
+}
+.fzf-form form {
+	width: 100%;
+}
+
+
+
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+body {background:pink;}
+.fzf-content h1 {
+	font-size: 150px;
+	line-height: 150px;
+}
+.fzf-content p {
+	font-size: 15px;
+	height: 24px;
+	left: 0;
+	letter-spacing: 7px;
+	margin: 0;
+	padding: 1px 25px;
+	top: 32.5%;
+	width: 100%;
+}
+.four-zero-four {
+	padding: 50px 0;
+}
+.fzf-form form {
+  width: 100%;
+}
+
+
+}
